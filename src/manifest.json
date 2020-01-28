@@ -1,0 +1,25 @@
+{
+
+    "manifest_version": 2,
+    "name": "Download Threat Protector",
+    "version": "1.0",
+
+    "description": "Monitors downloads for suspicious file extensions and warns the user when executable files are detected.",
+    "icons": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+
+    "minimum_chrome_version": "33.0.0",
+
+    "background": {
+        "scripts": [ "bg.js" ],
+        "persistent": false
+    },
+
+    "permissions": [
+        "downloads"
+    ]
+
+}
