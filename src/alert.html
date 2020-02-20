@@ -5,27 +5,28 @@
     <style>
         body {
             /* Styles that affect the entire page */
-            background-color: darkred;
+            background-color: black;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
         }
         .alert-title {
             /* Styles that affect the title of the alert */
+            font-size: 24px;
+            text-align: center;
+            color: red;
         }
         .alert-description {
             /* Styles that affect the description of the alert under the title */
+            text-align: center;
         }
         .alert-details {
             /* Styles that affect the whole DL (definition list) */
-            font-style: italic;
         }
         #file-ext {
             /* Styles that ONLY affect the file extension part of the DL */
-            font-weight: bold;
         }
         #file-message {
             /* Styles that ONLY affect the file description part of the DL */
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -37,6 +38,7 @@
         harm your computer. Be careful when opening and make sure the file
         is from a source that you trust.
     </p>
+    <hr />
     <dl class="alert-details">
         <dt id="file-ext"></dt>
         <dd id="file-message"></dd>
