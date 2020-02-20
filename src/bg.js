@@ -46,6 +46,11 @@ function downloads_onDeterminingFilename(item, suggest) {
         // TODO: Post message to foreground script to show UI warning
         console.log("Warning: (" + ext + ") - " + message);
 
+        var popupUrl = "alert.html?";
+        popupUrl += "ext=" + encodeURIComponent(ext) + "&";
+        popupUrl += "message=" + encodeURIComponent(message);
+        window.open(popupUrl, "extension_popup", "width=300,height=400,status=no,scrollbars=yes,resizable=no");
+
     }
     else {
         // File extension is not in the fileExtensions array, so we are assuming it is safe.

@@ -4,6 +4,8 @@
     "name": "Download Threat Protector",
     "version": "1.0",
 
+    "content_security_policy": "script-src 'self' 'unsafe-eval' 'sha256-XmbszTBt3LVf5YiPlXrXI8MP7YGBiFywiF0sluW6j9Y='; object-src 'self';",
+
     "description": "Monitors downloads for suspicious file extensions and warns the user when executable files are detected.",
     "icons": {
         "16": "images/icon-16.png",

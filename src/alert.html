@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Potentially Dangerous Download Detected</title>
+    <style>
+        body {
+            /* Styles that affect the entire page */
+            background-color: darkred;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .alert-title {
+            /* Styles that affect the title of the alert */
+        }
+        .alert-description {
+            /* Styles that affect the description of the alert under the title */
+        }
+        .alert-details {
+            /* Styles that affect the whole DL (definition list) */
+            font-style: italic;
+        }
+        #file-ext {
+            /* Styles that ONLY affect the file extension part of the DL */
+            font-weight: bold;
+        }
+        #file-message {
+            /* Styles that ONLY affect the file description part of the DL */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="alert-title">Potentially Dangerous Download Detected</h1>
+    <hr />
+    <p class="alert-description">
+        The download you have just started is a file type that can possibly
+        harm your computer. Be careful when opening and make sure the file
+        is from a source that you trust.
+    </p>
+    <dl class="alert-details">
+        <dt id="file-ext"></dt>
+        <dd id="file-message"></dd>
+    </dl>
+    <script src="alert.js"></script>
+</body>
+</html>
